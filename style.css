@@ -1,0 +1,353 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;    /* to fit in div */
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*      /////////////////////////////            Name and Social Icons                           */
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li {
+    border-radius: 50%;
+}
+
+.social-icons li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a img {
+    width: 1rem;
+    padding: 8px;     /* image should clearly visible becaz image has it border and its own content */
+}
+
+/*      ////////////////// section start  ///////////////  */
+section {
+    display:flex;
+    height: 75vh;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n+1) {
+     background-color: white;
+
+}
+section:nth-child(2n) {
+    background-color: lightgrey;
+}
+
+/*     ////////////        section end /////////////*/
+
+/* ///////////////////////////        about me               ////////////////////////////////////*/
+
+#about {
+    margin-top: -8vh;
+    height: auto;
+}
+#aboutme {
+    width: 70%;
+    /*margin: auto;*/
+    margin-top: 1vh;
+}
+#myimage {
+    width:10rem;
+    margin:auto;
+    position: relative;         /* overcome image avoid to hide behind background due to negative margin*/
+    
+    
+}
+#myimage img {
+    height:100%;
+    width:100%;
+    border-radius: 50%;
+    box-shadow:0px 0px 5px 5px lightgrey;
+}
+
+/* /////////////////////////            skills             ///////////////////  */
+#skills {
+    height:auto;
+}
+#skills h1 {
+    color:rgba(44, 44, 185, 0.719);
+
+}
+#skills h1 span {
+    margin:0px 6px 0px 6px;
+}
+#skill-contain {
+
+    width: 70%;
+  /*  height: 60%;*/
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.skill-progress {
+    width:7rem;
+    height:1.2rem;
+    background-color: wheat;
+    border-radius: 0.8rem;
+    border: 1px solid black;
+    margin: 5%;
+}
+.skill-name{
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 1px 4px 3px 6px;
+}
+/*   //////////////////////////     skill  percent      ////////////     */
+.six-percent {
+    width: 60%;
+    height: inherit;
+    background-color: red;
+    color: white;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+.seven-percent {
+    width: 70%;
+    height: inherit;
+    background-color: rgb(235, 144, 8);
+    color: white;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+
+}
+.eight-percent {
+    width: 80%;
+    height: inherit;
+    background-color: rgb(229, 255, 0);
+    color: white;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+.nine-percent {
+    width: 90%;
+    height: inherit;
+    background-color: rgb(65, 252, 8);
+    color: white;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+
+/*  ////////////////////////   /////////        portfolio            ////////////// //////////////////////////   */
+#portfolio h1 {
+    color:rgba(44, 44, 185, 0.719);
+
+}
+#portfolio h1 span {
+    margin:0px 6px 0px 6px;
+}
+#portfolio {
+    height: auto;
+}
+#port-contain {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 70%;
+    height:auto;
+
+}
+
+.port {
+    width:14rem;
+    height:15rem;
+    margin: 5%;
+}
+.port:hover{
+    box-shadow: 0px 0px 8px 6px grey ;
+}
+.port img {
+     width:100%;
+     height:100%;
+}
+
+/* /////////////////////////////// work experience //////////////////////   */
+#experience {
+    height: auto;
+}
+#experience h1 {
+    color:rgba(44, 44, 185, 0.719);
+    text-align: center;
+
+}
+#experience h1 span {
+    margin:0px 6px 0px 6px;
+}
+#timeline {
+    width: 60%;
+    margin:2rem;
+    position:relative;
+}
+
+.left {
+    font-size: 1.1rem;
+    text-align: right;
+    margin-top: -15px;
+    
+}
+.right {
+    text-align: left;
+    font-size: 0.8rem;
+}
+.timelinebox:nth-child(2n+1) {
+    width:30%;
+    position: relative;
+    left:5%;
+    padding:5%;
+}
+.timelinebox:nth-child(2n) {
+    width:30%;
+    position: relative;
+    left:55%;
+    padding:5%;
+}
+.divider {
+    position: absolute;
+    top:5%;
+    left:50%;
+    height:75%;
+    width: 0%;
+    border: 2px dashed blue;
+}
+.divider div {
+    position:sticky;
+    top:5%;
+    transform: rotate(90deg);
+}
+
+/*     //////////////////////contact /////////////////////////////////*/
+#contact {
+    background-image:linear-gradient(to right,#2857a4,#403066);
+    height:auto;
+}
+#contact h1 {
+    color:white;
+    font-weight:600;
+}
+#info {
+    display:flex;
+    flex-direction:row;
+    width:70%;
+    height:auto;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-bottom:5%;
+}
+#your-data {
+    width:45%;
+    margin-bottom:5%;
+    
+}
+
+#my-add {
+    width:45%;
+    margin-bottom:5%;
+}
+#your-data form {
+    display: flex;
+    height:auto;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+#your-data form input {
+    border:none;
+    outline:none;
+    color:white;
+    padding:2px;
+    width: 100%;
+    margin-top:7%;
+    font-size:1rem;
+    background-color:transparent;
+    border-bottom:1px solid white;
+}
+#your-data form button {
+    
+    margin-top:7%;
+    background-color:transparent;
+    color:white;
+    border:1px solid white;
+    border-radius:3px;
+    padding:2%;
+}
+#my-add h4{
+    font-size:1.3rem;
+    color:white;
+    line-height:1rem;
+}
+#pid{
+    font-size:0.8rem;
+    color:lightgrey;
+    margin-top:-1rem;
+}
+#my-add p{
+    font-size:0.8rem;
+    color:lightgrey;
+}
+#contact-social {
+    margin-bottom: 5%;
+}
+
+
+
